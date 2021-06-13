@@ -2,6 +2,7 @@
 #include "his.h"
 int getHistogram(const char* imgName, int channel, int binSize, Histogram_t* histogram){
 
+	printf("Hey");
 	FILE *fp = fopen(imgName, "rb");	
 	unsigned char header[54];
     	fread(header, sizeof(unsigned char), 54, fp);
